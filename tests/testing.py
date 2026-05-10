@@ -17,7 +17,7 @@ def driver_config():
     driver.maximize_window()
     return driver
 
-# Primera parte
+# Inicializando el Driver
 
 def test_login():
     driver = driver_config()
@@ -58,6 +58,7 @@ def test_login():
         print("Cerrando navegador...")
         time.sleep(3)
         driver.quit()
-
+        
+# Autoimplementación
 if __name__ == "__main__":
     test_login()
